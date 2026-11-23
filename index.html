@@ -1,0 +1,98 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Painel de cálculos cotidianos com comissão progressiva, saque em cédulas, estoque, idade aproximada e diagonal de matriz.">
+    <title>
+      Oficina de Cálculos
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js">
+    </script>
+  </head>
+  <body>
+    <header class="topo">
+      <a class="marca" href="index.html">
+        PROJETO
+        <span>
+          ·
+        </span>
+        Oficina
+      </a>
+      <span class="selo">
+        DEMONSTRAÇÃO LOCAL
+      </span>
+    </header>
+    <main>
+      <section class="abertura">
+        <p class="sobretitulo">
+          ESTUDO INTERATIVO · JAVASCRIPT
+        </p>
+        <h1>
+          Oficina de Cálculos
+        </h1>
+        <p class="introducao">
+          Painel de cálculos cotidianos com comissão progressiva, saque em cédulas, estoque, idade aproximada e diagonal de matriz.
+        </p>
+      </section>
+      <section class="painel">
+        <form id="formulario">
+          <div class="grade">
+            <div class="campo">
+              <label for="salario">
+                Salário fixo (R$)
+              </label>
+              <input id="salario" type="number" min="0" step="0.01" value="1800" required>
+            </div>
+            <div class="campo">
+              <label for="vendas">
+                Vendas (R$)
+              </label>
+              <input id="vendas" type="number" min="0" step="0.01" value="2400" required>
+            </div>
+            <div class="campo">
+              <label for="saque">
+                Saque (R$ inteiro)
+              </label>
+              <input id="saque" type="number" min="0" step="1" value="120" required>
+            </div>
+            <div class="campo">
+              <label for="estoque">
+                Itens disponíveis
+              </label>
+              <input id="estoque" type="number" min="0" step="1" value="35" required>
+            </div>
+            <div class="campo">
+              <label for="nascimento">
+                Ano de nascimento
+              </label>
+              <input id="nascimento" type="number" min="1900" value="1996" required>
+            </div>
+          </div>
+          <div class="acoes">
+            <button>
+              Calcular painel
+            </button>
+          </div>
+        </form>
+        <div id="resultado" class="resultado" aria-live="polite">
+        </div>
+      </section>
+      <section class="painel">
+        <h2>
+          Diagonal principal
+        </h2>
+        <p>
+          Valores de uma matriz quadrada fictícia:
+        </p>
+        <pre id="diagonal">
+        </pre>
+      </section>
+    </main>
+    <footer>
+      Projeto demonstrativo independente · dados fictícios · sem serviços externos
+    </footer>
+  </body>
+</html>
+
